@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf6">
+  <meta name="description" content="Explore the Titan Timekeepers Atelier concept collection: refined timepieces, bespoke consultations, and considered design in a white, gold, and black luxury experience.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Titan Timekeepers Atelier — Time, Considered">
+  <meta property="og:description" content="Discover considered design, refined timepieces, and bespoke watch consultations.">
+  <meta name="color-scheme" content="light">
+  <title>Titan Timekeepers Atelier — Time, Considered.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #090d12;
+      --ink-soft: #101720;
+      --panel: #131c25;
+      --cream: #f2eee5;
+      --muted: #a9adb0;
+      --gold: #c9aa72;
+      --gold-light: #e7d3a8;
+      --line: rgba(231, 211, 168, .22);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+      --page: min(1200px, calc(100% - 48px));
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; background: var(--ink); color: var(--cream); font-family: var(--sans); line-height: 1.65; }
+    body.menu-open { overflow: hidden; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; width: 100%; object-fit: cover; }
+    button, input, textarea, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    ::selection { background: var(--gold); color: var(--ink); }
+    .skip-link { position: absolute; left: -9999px; top: 10px; z-index: 1000; background: var(--cream); color: var(--ink); padding: 12px 16px; }
+    .skip-link:focus { left: 12px; }
+    .container { width: var(--page); margin-inline: auto; }
+    .eyebrow { display: flex; align-items: center; gap: 12px; color: var(--gold-light); font-size: .69rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; display: inline-block; width: 28px; height: 1px; background: var(--gold); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.12; }
+    h1 { font-size: clamp(3.4rem, 8.4vw, 7.8rem); letter-spacing: -.055em; max-width: 850px; margin-bottom: 22px; }
+    h2 { font-size: clamp(2.5rem, 5vw, 4.7rem); letter-spacing: -.04em; margin-bottom: 22px; }
+    h3 { font-size: clamp(1.45rem, 2.2vw, 2rem); margin-bottom: 12px; }
+    .section { padding: 120px 0; }
+    .section-heading { max-width: 690px; margin-bottom: 52px; }
+    .section-heading p { color: var(--muted); max-width: 540px; margin-bottom: 0; }
+    .gold { color: var(--gold-light); }
+    .muted { color: var(--muted); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 13px; min-height: 52px; padding: 0 22px; border: 1px solid var(--gold); color: var(--cream); text-transform: uppercase; letter-spacing: .13em; font-size: .69rem; font-weight: 600; transition: background .25s ease, color .25s ease, transform .25s ease; cursor: pointer; }
+    .btn:hover, .btn:focus-visible { background: var(--gold); color: var(--ink); transform: translateY(-2px); }
+    .btn .arrow { font-size: 1rem; line-height: 1; }
+    .btn-solid { background: var(--gold); color: var(--ink); }
+    .btn-solid:hover, .btn-solid:focus-visible { background: var(--gold-light); border-color: var(--gold-light); }
+    :focus-visible { outline: 2px solid var(--gold-light); outline-offset: 4px; }
+
+    /* Cinematic luxury-watch opening sequence */
+    .watch-intro { position: fixed; inset: 0; z-index: 9999; overflow: hidden; display: grid; place-items: center; isolation: isolate; background: radial-gradient(ellipse at 50% 44%, #1a2025 0%, #090b0e 46%, #020304 100%); animation: intro-away 1.0s cubic-bezier(.7,0,.2,1) 2.25s forwards; }
+    .intro-grain { position: absolute; inset: -50%; opacity: .12; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.34'/%3E%3C/svg%3E"); animation: grain-drift .22s steps(2) infinite; }
+    .intro-light { position: absolute; inset: -30%; background: conic-gradient(from 225deg at 50% 48%, transparent 0deg, rgba(201,170,114,.02) 42deg, rgba(231,211,168,.16) 52deg, transparent 66deg, transparent 360deg); animation: light-turn 5s linear infinite; }
+    .intro-orbit { position: absolute; width: min(76vw, 680px); aspect-ratio: 1; border: 1px solid rgba(201,170,114,.14); border-radius: 50%; box-shadow: 0 0 0 38px rgba(201,170,114,.018), 0 0 0 88px rgba(201,170,114,.014); animation: orbit-in 2s cubic-bezier(.16,1,.3,1) both; }
+    .intro-orbit::before, .intro-orbit::after { content: ''; position: absolute; border-radius: 50%; border: 1px solid rgba(231,211,168,.12); inset: 8%; }
+    .intro-orbit::after { inset: 17%; border-style: dashed; animation: orbit-spin 38s linear infinite; }
+    .watch-intro-inner { position: relative; z-index: 2; display: grid; justify-items: center; gap: 25px; text-align: center; animation: intro-rise 1.5s cubic-bezier(.16,1,.3,1) both; }
+    .intro-overline { margin-bottom: 5px; color: rgba(231,211,168,.75); font-size: .56rem; letter-spacing: .42em; text-transform: uppercase; }
+    .intro-watch { width: clamp(190px, 28vw, 260px); aspect-ratio: 1; border: 8px solid #8c7148; border-radius: 50%; position: relative; background: radial-gradient(circle at 32% 24%, #37404a 0%, #141b23 25%, #080d12 68%, #1e252b 100%); box-shadow: 0 0 0 2px #e4c88c, 0 0 0 12px rgba(201,170,114,.07), 0 0 70px rgba(201,170,114,.2), inset 0 0 24px #000, inset 0 0 0 2px rgba(255,255,255,.13); transform: perspective(900px) rotateX(12deg) rotateY(-8deg); animation: watch-arrive 1.65s cubic-bezier(.16,1,.3,1) both, watch-float 4s ease-in-out 1.65s infinite; }
+    .intro-watch::before { content: ''; position: absolute; inset: 9px; border: 1px solid rgba(231,211,168,.62); border-radius: 50%; box-shadow: inset 0 0 25px rgba(201,170,114,.08); }
+    .intro-watch::after { content: 'TITAN  ·  ATELIER'; position: absolute; left: 0; right: 0; top: 27%; text-align: center; color: #e7d3a8; font: 600 7px var(--sans); letter-spacing: 2px; }
+    .intro-crown { position: absolute; right: -17px; top: 43%; width: 15px; height: 32px; border: 1px solid #d5b779; border-radius: 3px; background: repeating-linear-gradient(90deg,#765b34 0 2px,#d4b779 2px 3px); box-shadow: 2px 0 8px #000; }
+    .watch-tick { position: absolute; left: 50%; top: 13px; width: 2px; height: 10px; background: #e7d3a8; transform-origin: 0 105px; box-shadow: 0 0 6px rgba(231,211,168,.35); }
+    .watch-tick:nth-of-type(3n) { height: 15px; width: 3px; }
+    .watch-hand { position: absolute; left: 50%; bottom: 50%; width: 3px; height: 31%; background: linear-gradient(#fff0c8,#c9aa72); transform-origin: bottom; border-radius: 3px; animation: hand-sweep 3.8s cubic-bezier(.3,.1,.3,1) both; box-shadow: 0 0 8px rgba(231,211,168,.3); }
+    .watch-hand.minute { height: 39%; width: 2px; background: #f2eee5; animation-duration: 4s; }
+    .watch-hand.second { height: 43%; width: 1px; background: #bd4438; animation: second-sweep 4s linear both; }
+    .watch-pin { position: absolute; left: calc(50% - 5px); top: calc(50% - 5px); width: 10px; height: 10px; border: 2px solid #f3dca8; border-radius: 50%; background: #8c6335; box-shadow: 0 0 9px rgba(231,211,168,.6); }
+    .intro-wordmark { color: var(--cream); font: 500 .75rem var(--sans); letter-spacing: .38em; text-transform: uppercase; }
+    .intro-wordmark span { display: block; margin-top: 10px; color: var(--gold); font: 400 .62rem var(--sans); letter-spacing: .24em; }
+    .intro-tagline { margin: -8px 0 0; color: rgba(242,238,229,.65); font: italic 1rem var(--serif); letter-spacing: .05em; }
+    .intro-progress { width: 150px; height: 1px; margin-top: 1px; overflow: hidden; background: rgba(231,211,168,.18); }
+    .intro-progress span { display: block; width: 100%; height: 100%; background: var(--gold-light); transform-origin: left; animation: progress-run 4.4s linear both; }
+    .intro-enter { position: absolute; bottom: 30px; z-index: 3; color: rgba(231,211,168,.55); font-size: .56rem; letter-spacing: .25em; text-transform: uppercase; animation: intro-pulse 1.8s ease-in-out infinite; }
+    @keyframes hand-sweep { from { transform: rotate(-130deg); } to { transform: rotate(235deg); } }
+    @keyframes second-sweep { from { transform: rotate(0deg); } to { transform: rotate(1440deg); } }
+    @keyframes intro-rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes watch-arrive { from { opacity: 0; transform: perspective(900px) rotateX(40deg) rotateY(-30deg) scale(.62); filter: blur(8px); } to { opacity: 1; transform: perspective(900px) rotateX(12deg) rotateY(-8deg) scale(1); filter: blur(0); } }
+    @keyframes watch-float { 0%,100% { transform: perspective(900px) rotateX(12deg) rotateY(-8deg) translateY(0); } 50% { transform: perspective(900px) rotateX(8deg) rotateY(-4deg) translateY(-7px); } }
+    @keyframes orbit-in { from { opacity: 0; transform: scale(.65) rotate(-35deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
+    @keyframes orbit-spin { to { transform: rotate(360deg); } }
+    @keyframes light-turn { to { transform: rotate(360deg); } }
+    @keyframes grain-drift { 0% { transform: translate(0,0); } 100% { transform: translate(2%,-1%); } }
+    @keyframes progress-run { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes intro-pulse { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+    @keyframes intro-away { to { opacity: 0; visibility: hidden; } }
+    @media (max-width: 560px) { .intro-watch { width: 190px; } .intro-orbit { width: 88vw; } .intro-wordmark { font-size: .66rem; letter-spacing: .26em; } }
+    @media (prefers-reduced-motion: reduce) { .watch-intro { display: none; } }
+    /* Storytelling panel */
+    .story-quote { margin-top: 42px; padding: 25px 0 0; border-top: 1px solid var(--line); color: var(--gold-light); font: italic clamp(1.35rem, 2.3vw, 2rem)/1.4 var(--serif); }
+    .story-quote small { display: block; margin-top: 12px; color: var(--muted); font: 600 .62rem var(--sans); letter-spacing: .17em; text-transform: uppercase; }
+    .collection-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .product-card:nth-child(n+4) { margin-top: 30px; }
+    .product-tag { display: inline-block; margin-bottom: 8px; color: var(--gold); font-size: .6rem; letter-spacing: .15em; text-transform: uppercase; }
+    .collection-feature-note { margin-top: 38px; padding: 30px; border: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 24px; background: linear-gradient(110deg, rgba(201,170,114,.08), transparent 65%); }
+    .collection-feature-note h3 { margin: 0 0 7px; }
+    .collection-feature-note p { color: var(--muted); margin: 0; max-width: 620px; font-size: .9rem; }
+    @media (max-width: 900px) { .collection-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .product-card:nth-child(n+4) { margin-top: 10px; } }
+    @media (max-width: 560px) { .collection-grid { grid-template-columns: 1fr; } .product-card:nth-child(n+4) { margin-top: 0; } .collection-feature-note { display: block; padding: 23px; } .collection-feature-note .btn { margin-top: 20px; } .intro-watch { width: 116px; height: 116px; } }
+    @media (prefers-reduced-motion: reduce) { .watch-intro { display: none; } }
+
+    /* Navigation */
+    .site-header { position: fixed; inset: 0 0 auto; z-index: 100; border-bottom: 1px solid transparent; transition: background .3s ease, border-color .3s ease; }
+    .site-header.scrolled { background: rgba(9,13,18,.94); backdrop-filter: blur(16px); border-color: rgba(231,211,168,.13); }
+    .nav { width: var(--page); min-height: 82px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .brandmark { display: inline-flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    .brand-symbol { width: 34px; height: 34px; border: 1px solid var(--gold); border-radius: 50%; display: grid; place-items: center; color: var(--gold-light); font-family: var(--serif); font-size: 1.2rem; }
+    .brand-name { font-family: var(--serif); font-size: 1rem; letter-spacing: .06em; line-height: 1.15; }
+    .brand-name small { display: block; margin-top: 4px; font-family: var(--sans); color: var(--gold); font-size: .53rem; letter-spacing: .25em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: clamp(18px, 2.6vw, 36px); }
+    .nav-links a { color: #d8d6d0; font-size: .72rem; letter-spacing: .07em; transition: color .2s ease; }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-links .nav-cta { padding: 11px 15px; border: 1px solid var(--line); color: var(--gold-light); text-transform: uppercase; letter-spacing: .12em; font-size: .64rem; }
+    .menu-toggle { display: none; border: 1px solid var(--line); background: transparent; color: var(--cream); width: 44px; height: 44px; cursor: pointer; }
+    .menu-toggle span { display: block; width: 18px; height: 1px; background: currentColor; margin: 5px auto; }
+
+    /* Hero */
+    .hero { min-height: min(900px, 100svh); min-height: max(720px, 100svh); position: relative; display: flex; align-items: center; overflow: hidden; background: #0c1219; }
+    .hero-image { position: absolute; inset: 0; height: 100%; object-position: center 48%; }
+    .hero::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(5,8,12,.94) 0%, rgba(5,8,12,.78) 39%, rgba(5,8,12,.20) 78%, rgba(5,8,12,.28) 100%), linear-gradient(0deg, rgba(9,13,18,.9), transparent 32%, rgba(9,13,18,.15)); }
+    .hero-content { position: relative; z-index: 2; padding-top: 95px; }
+    .hero .eyebrow { margin-bottom: 28px; }
+    .hero h1 em { color: var(--gold-light); font-style: normal; }
+    .hero-copy { max-width: 470px; color: #c4c4c0; font-size: 1rem; margin-bottom: 34px; }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; }
+    .hero-note { position: absolute; z-index: 2; bottom: 38px; right: max(24px, calc((100% - 1200px) / 2)); display: flex; align-items: center; gap: 14px; color: #e4dfd4; font-size: .66rem; letter-spacing: .15em; text-transform: uppercase; }
+    .hero-note::before { content: ""; width: 42px; height: 1px; background: var(--gold); }
+    .scroll-cue { position: absolute; bottom: 36px; left: max(24px, calc((100% - 1200px) / 2)); z-index: 2; display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: .63rem; letter-spacing: .16em; text-transform: uppercase; }
+    .scroll-cue span { display: block; height: 40px; width: 1px; background: linear-gradient(var(--gold), transparent); }
+
+    /* Story */
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 8vw, 120px); align-items: center; }
+    .story-image-wrap { position: relative; padding: 0 28px 28px 0; }
+    .story-image-wrap::after { content: ""; position: absolute; z-index: -1; inset: 28px 0 0 28px; border: 1px solid var(--gold); opacity: .6; }
+    .story-image { height: 590px; object-position: center; filter: saturate(.78); }
+    .story-copy p { color: var(--muted); }
+    .signature { margin-top: 34px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; align-items: center; gap: 15px; }
+    .signature-mark { font-family: var(--serif); font-size: 2.1rem; color: var(--gold); font-style: italic; }
+    .signature small { display: block; color: var(--muted); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
+
+    /* Collections */
+    .collections { background: #0d131a; }
+    .collection-top { display: flex; align-items: end; justify-content: space-between; gap: 30px; }
+    .collection-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .product-card { min-width: 0; }
+    .product-image-wrap { position: relative; overflow: hidden; background: #17202a; aspect-ratio: 4 / 5; }
+    .product-image { height: 100%; transition: transform .8s cubic-bezier(.2,.65,.25,1); }
+    .product-card:hover .product-image { transform: scale(1.045); }
+    .product-number { position: absolute; top: 17px; left: 17px; color: #fff; font-size: .64rem; letter-spacing: .16em; }
+    .product-info { padding: 23px 2px 0; display: flex; justify-content: space-between; gap: 18px; }
+    .product-info h3 { margin: 0 0 8px; }
+    .product-info p { color: var(--muted); font-size: .86rem; margin: 0; max-width: 290px; }
+    .product-arrow { color: var(--gold); font-size: 1.4rem; transition: transform .2s ease; }
+    .product-card:hover .product-arrow { transform: translate(4px,-4px); }
+    .collection-foot { margin-top: 46px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: .8rem; }
+
+
+    .product-card { perspective: 900px; }
+    .product-image-wrap { isolation: isolate; }
+    .product-image { transform-origin: center; will-change: transform, filter; }
+    .product-image-wrap::after { content:""; position:absolute; inset:-40% -80%; z-index:1; pointer-events:none; opacity:0; background:linear-gradient(110deg,transparent 40%,rgba(255,244,210,.36) 49%,rgba(255,255,255,.04) 53%,transparent 61%); transform:translateX(-55%) rotate(8deg); transition:opacity .35s ease; }
+    .product-card:hover .product-image-wrap::after { opacity:1; animation:watch-sheen 1.25s ease both; }
+    .watch-motion-label { position:absolute; z-index:2; bottom:14px; right:14px; padding:6px 9px; border:1px solid rgba(231,211,168,.55); background:rgba(7,10,13,.62); backdrop-filter:blur(8px); color:#f2dfb5; font-size:.58rem; letter-spacing:.12em; text-transform:uppercase; }
+    @keyframes watch-sheen { from{transform:translateX(-55%) rotate(8deg)} to{transform:translateX(55%) rotate(8deg)} }
+    @keyframes watch-float { 0%,100%{transform:translateY(0) scale(1.015)} 50%{transform:translateY(-8px) scale(1.04)} }
+    @keyframes watch-tilt { 0%,100%{transform:scale(1.025) rotate(0)} 35%{transform:scale(1.06) rotate(1.1deg)} 70%{transform:scale(1.045) rotate(-1deg)} }
+    @keyframes watch-zoom { from{transform:scale(1)} to{transform:scale(1.12)} }
+    @keyframes watch-pan { from{transform:scale(1.08) translateX(-2%)} to{transform:scale(1.08) translateX(2%)} }
+    @keyframes watch-glow { 0%,100%{filter:brightness(1) saturate(.95)} 50%{filter:brightness(1.23) saturate(1.18)} }
+    @keyframes watch-drift { 0%,100%{transform:scale(1.03) translateY(0)} 50%{transform:scale(1.07) translateY(-5px)} }
+    @keyframes watch-pulse { 0%,100%{transform:scale(1.02);filter:contrast(1)} 50%{transform:scale(1.055);filter:contrast(1.15)} }
+    @keyframes watch-turn { 0%,100%{transform:scale(1.02) rotateY(0deg)} 50%{transform:scale(1.055) rotateY(4deg)} }
+    @keyframes watch-shift { 0%,100%{transform:scale(1.04) translateX(0)} 50%{transform:scale(1.08) translateX(-7px)} }
+    @keyframes watch-focus { 0%,100%{transform:scale(1.02);filter:brightness(.95) blur(0)} 50%{transform:scale(1.06);filter:brightness(1.12) blur(.15px)} }
+    @keyframes watch-sway { 0%,100%{transform:scale(1.02) rotate(0)} 50%{transform:scale(1.055) rotate(-1.5deg)} }
+    @keyframes watch-ripple { 0%,100%{transform:scale(1.02);filter:saturate(.9)} 50%{transform:scale(1.07);filter:saturate(1.3)} }
+    @keyframes watch-scan { 0%,100%{transform:scale(1.02) translateY(0)} 50%{transform:scale(1.055) translateY(6px)} }
+    @keyframes watch-rotate { 0%,100%{transform:scale(1.025) rotate(0)} 50%{transform:scale(1.055) rotate(.8deg)} }
+    @keyframes watch-shimmer { 0%,100%{filter:brightness(.95) saturate(.9);transform:scale(1.02)} 50%{filter:brightness(1.2) saturate(1.25);transform:scale(1.055)} }
+    @keyframes watch-signature { 0%,100%{transform:scale(1.02) translateY(0)} 50%{transform:scale(1.06) translateY(-6px)} }
+    .product-card:hover .product-image { animation-duration:2.4s; animation-timing-function:ease-in-out; animation-iteration-count:infinite; }
+    .watch-01:hover .product-image { animation-name:watch-float; }
+    .watch-02:hover .product-image { animation-name:watch-tilt; }
+    .watch-03:hover .product-image { animation-name:watch-zoom; animation-duration:1.6s; }
+    .watch-04:hover .product-image { animation-name:watch-pan; }
+    .watch-05:hover .product-image { animation-name:watch-glow; }
+    .watch-06:hover .product-image { animation-name:watch-drift; }
+    .watch-07:hover .product-image { animation-name:watch-pulse; }
+    .watch-08:hover .product-image { animation-name:watch-turn; }
+    .watch-09:hover .product-image { animation-name:watch-shift; }
+    .watch-10:hover .product-image { animation-name:watch-focus; }
+    .watch-11:hover .product-image { animation-name:watch-sway; }
+    .watch-12:hover .product-image { animation-name:watch-ripple; }
+    .watch-13:hover .product-image { animation-name:watch-scan; }
+    .watch-14:hover .product-image { animation-name:watch-shimmer; }
+    .watch-15:hover .product-image { animation-name:watch-signature; }
+    @media (prefers-reduced-motion: reduce) { .product-card:hover .product-image,.product-card:hover .product-image-wrap::after { animation:none!important; } }
+
+    /* Craft */
+    .craft-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: stretch; }
+    .craft-feature { min-height: 620px; position: relative; overflow: hidden; }
+    .craft-feature img { position: absolute; inset: 0; height: 100%; }
+    .craft-feature::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(4,7,10,.94), rgba(4,7,10,.04) 72%); }
+    .craft-feature-content { position: absolute; z-index: 1; bottom: 34px; left: 34px; right: 34px; }
+    .craft-feature-content p { max-width: 410px; color: #c5c5c0; margin-bottom: 0; }
+    .craft-list { display: flex; flex-direction: column; justify-content: center; padding: 16px clamp(10px, 4vw, 54px); }
+    .craft-item { padding: 28px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 45px 1fr; gap: 20px; }
+    .craft-item:first-child { border-top: 1px solid var(--line); }
+    .craft-index { font-family: var(--serif); font-size: 1.35rem; color: var(--gold); }
+    .craft-item h3 { font-size: 1.55rem; margin-bottom: 8px; }
+    .craft-item p { color: var(--muted); font-size: .88rem; margin: 0; }
+
+    /* Bespoke */
+    .bespoke { background: #e9e2d5; color: #111820; }
+    .bespoke .eyebrow { color: #80653b; }
+    .bespoke .eyebrow::before { background: #9a7845; }
+    .bespoke .section-heading p { color: #5f625f; }
+    .bespoke-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; align-items: start; }
+    .bespoke-aside { position: sticky; top: 120px; }
+    .bespoke-aside .btn { color: #111820; border-color: #80653b; }
+    .bespoke-aside .btn:hover { background: #80653b; color: #fff; }
+    .steps { border-top: 1px solid rgba(17,24,32,.2); }
+    .step { display: grid; grid-template-columns: 55px 1fr; gap: 24px; padding: 28px 0; border-bottom: 1px solid rgba(17,24,32,.2); }
+    .step-no { color: #967546; font-family: var(--serif); font-size: 1.6rem; }
+    .step h3 { font-size: 1.7rem; }
+    .step p { color: #5f625f; margin: 0; max-width: 470px; }
+
+    /* Quote */
+    .quote-section { padding: 110px 0; text-align: center; }
+    .quote-mark { color: var(--gold); font-family: var(--serif); font-size: 5rem; line-height: .8; }
+    blockquote { max-width: 850px; margin: 22px auto 30px; font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 3.4rem); line-height: 1.25; letter-spacing: -.025em; }
+    .quote-credit { color: var(--gold-light); font-size: .68rem; letter-spacing: .17em; text-transform: uppercase; }
+    .quote-disclaimer { color: #777d81; font-size: .7rem; margin: 20px auto 0; max-width: 560px; }
+
+    /* Contact */
+    .contact { background: #0d131a; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(40px, 8vw, 120px); align-items: start; }
+    .contact-copy p { color: var(--muted); max-width: 430px; }
+    .contact-detail { padding-top: 26px; margin-top: 28px; border-top: 1px solid var(--line); }
+    .contact-detail span { display: block; color: var(--gold); font-size: .64rem; letter-spacing: .17em; text-transform: uppercase; margin-bottom: 7px; }
+    .contact-detail a, .contact-detail p { color: #d8d6d0; font-size: .92rem; margin: 0; }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .contact-action { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(231,211,168,.28); padding: 11px 14px; color: var(--cream); font-size: .75rem; transition: background .2s, border-color .2s; }
+    .contact-action:hover { background: rgba(231,211,168,.08); border-color: var(--gold); }
+    .whatsapp-float { position: fixed; right: 20px; bottom: 20px; z-index: 50; display: inline-flex; align-items: center; gap: 9px; padding: 13px 17px; background: #1e9e60; color: white; border-radius: 999px; box-shadow: 0 8px 30px rgba(0,0,0,.3); font-size: .82rem; font-weight: 600; }
+    .whatsapp-float:hover { background: #16834e; }
+    @media (max-width: 480px) { .whatsapp-float { right: 12px; bottom: 12px; padding: 12px 14px; } }
+    .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .field { display: flex; flex-direction: column; gap: 9px; }
+    .field.full { grid-column: 1 / -1; }
+    label { color: #d8d6d0; font-size: .72rem; letter-spacing: .06em; }
+    input, textarea, select { width: 100%; border: 1px solid rgba(231,211,168,.22); background: #101820; color: var(--cream); padding: 14px 15px; border-radius: 0; outline: none; }
+    input:focus, textarea:focus, select:focus { border-color: var(--gold); }
+    input::placeholder, textarea::placeholder { color: #747d83; }
+    textarea { min-height: 130px; resize: vertical; }
+    select { color-scheme: dark; }
+    .form-note { grid-column: 1 / -1; color: #8c9396; font-size: .74rem; margin: -5px 0 0; }
+    .form-status { grid-column: 1 / -1; color: var(--gold-light); font-size: .86rem; min-height: 1.4em; }
+    .contact-form .btn { justify-self: start; }
+
+    /* Footer */
+    footer { padding: 32px 0; background: #080b0f; border-top: 1px solid rgba(231,211,168,.13); }
+    .footer-main { display: flex; justify-content: space-between; align-items: center; gap: 30px; padding-bottom: 28px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 22px; color: var(--muted); font-size: .72rem; }
+    .footer-links a:hover { color: var(--gold-light); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; border-top: 1px solid rgba(231,211,168,.1); color: #7e8589; font-size: .68rem; }
+    .socials { display: flex; gap: 16px; }
+    .socials a { color: var(--muted); }
+    .socials a:hover { color: var(--gold-light); }
+
+    /* Motion */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s ease, transform .8s ease; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: .12s; }
+    .delay-2 { transition-delay: .22s; }
+    .delay-3 { transition-delay: .32s; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 900px) {
+      :root { --page: min(100% - 40px, 700px); }
+      .section { padding: 88px 0; }
+      .nav { min-height: 74px; }
+      .menu-toggle { display: block; }
+      .nav-links { display: none; position: fixed; inset: 74px 0 auto; padding: 25px 24px 32px; background: rgba(9,13,18,.98); border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 15px 0; border-bottom: 1px solid rgba(231,211,168,.1); font-size: .82rem; }
+      .nav-links .nav-cta { text-align: center; margin-top: 15px; border: 1px solid var(--gold); }
+      .hero { min-height: 780px; min-height: 100svh; }
+      .hero::before { background: linear-gradient(90deg, rgba(5,8,12,.86), rgba(5,8,12,.4)), linear-gradient(0deg, rgba(9,13,18,.85), transparent 55%); }
+      .hero-image { object-position: 62% center; }
+      .hero-content { padding-top: 75px; }
+      .hero-note { display: none; }
+      .story-grid, .craft-grid, .bespoke-layout, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+      .story-image-wrap { max-width: 570px; }
+      .story-image { height: 480px; }
+      .collection-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 18px; }
+      .craft-feature { min-height: 520px; }
+      .craft-list { padding: 0; }
+      .bespoke-aside { position: static; }
+      .contact-grid { gap: 52px; }
+    }
+    @media (max-width: 560px) {
+      :root { --page: calc(100% - 36px); }
+      .section { padding: 72px 0; }
+      .nav { min-height: 70px; }
+      .brand-symbol { width: 31px; height: 31px; }
+      .brand-name { font-size: .88rem; }
+      .hero { min-height: 760px; min-height: 100svh; }
+      .hero-image { object-position: 59% center; }
+      .hero::before { background: linear-gradient(90deg, rgba(5,8,12,.84), rgba(5,8,12,.4)), linear-gradient(0deg, rgba(9,13,18,.96), transparent 70%); }
+      h1 { font-size: clamp(3.2rem, 16vw, 5.1rem); }
+      h2 { font-size: clamp(2.45rem, 12vw, 3.6rem); }
+      .hero-copy { font-size: .92rem; max-width: 350px; }
+      .hero-actions { align-items: stretch; flex-direction: column; max-width: 310px; }
+      .hero-actions .btn { width: 100%; }
+      .scroll-cue { bottom: 22px; left: 18px; }
+      .story-image-wrap { padding: 0 17px 17px 0; }
+      .story-image-wrap::after { inset: 17px 0 0 17px; }
+      .story-image { height: 390px; }
+      .collection-top { display: block; }
+      .collection-top .btn { margin-top: 10px; }
+      .collection-grid { grid-template-columns: 1fr; gap: 34px; }
+      .product-image-wrap { aspect-ratio: 4 / 4.6; }
+      .product-info { padding-top: 17px; }
+      .collection-foot { display: block; line-height: 1.8; }
+      .craft-feature { min-height: 460px; }
+      .craft-feature-content { bottom: 24px; left: 22px; right: 22px; }
+      .craft-item { grid-template-columns: 35px 1fr; gap: 14px; padding: 23px 0; }
+      .step { grid-template-columns: 38px 1fr; gap: 14px; padding: 24px 0; }
+      .quote-section { padding: 80px 0; }
+      .contact-form { grid-template-columns: 1fr; }
+      .field.full, .form-note, .form-status { grid-column: auto; }
+      .contact-form .btn { width: 100%; }
+      .footer-main, .footer-bottom { align-items: flex-start; flex-direction: column; }
+      .footer-links { gap: 14px 20px; }
+    }
+
+    /* Premium watch detail experience */
+    .product-card > a { display:block; height:100%; cursor:pointer; }
+    .product-card:focus-within { outline:1px solid rgba(231,211,168,.6); outline-offset:6px; }
+    .product-price { display:block; margin-top:12px; color:var(--gold-light); font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; }
+    .watch-modal { position:fixed; inset:0; z-index:10001; display:none; place-items:center; padding:22px; background:rgba(0,0,0,.82); backdrop-filter:blur(12px); }
+    .watch-modal.open { display:grid; animation:modal-fade .25s ease both; }
+    .watch-modal-panel { position:relative; width:min(900px,100%); max-height:min(88vh,760px); overflow:auto; display:grid; grid-template-columns:1fr 1fr; background:linear-gradient(135deg,#17202a,#080b0f 70%); border:1px solid rgba(201,170,114,.42); box-shadow:0 30px 100px #000; }
+    .watch-modal-visual { min-height:430px; overflow:hidden; background:#111820; position:relative; display:grid; place-items:center; }
+    .watch-modal-visual::after { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(120deg,transparent 30%,rgba(231,211,168,.18) 48%,transparent 62%); transform:translateX(-100%); animation:modal-sheen 4s ease-in-out infinite; }
+    .watch-modal-visual img { width:100%; height:100%; min-height:430px; object-fit:cover; animation:modal-watch-arrive .9s cubic-bezier(.2,.8,.2,1) both; }
+    .watch-modal-copy { padding:clamp(28px,5vw,54px); align-self:center; }
+    .watch-modal-copy h2 { font-size:clamp(2.2rem,4vw,3.4rem); margin:12px 0 18px; }
+    .watch-modal-copy p { color:var(--muted); }
+    .watch-modal-price { display:block; margin:22px 0; color:var(--gold-light); letter-spacing:.15em; font-size:.75rem; text-transform:uppercase; }
+    .watch-modal-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+    .watch-modal-close { position:absolute; top:12px; right:12px; z-index:3; width:42px; height:42px; border:1px solid rgba(231,211,168,.45); background:#080b0f; color:var(--cream); border-radius:50%; font-size:1.35rem; cursor:pointer; }
+    .watch-modal-close:hover { background:var(--gold); color:#090d12; }
+    @keyframes modal-fade { from{opacity:0}to{opacity:1} }
+    @keyframes modal-sheen { 0%,25%{transform:translateX(-110%)} 70%,100%{transform:translateX(110%)} }
+    @keyframes modal-watch-arrive { from{transform:scale(1.08) rotateY(-8deg);filter:brightness(.6)} to{transform:scale(1) rotateY(0);filter:brightness(1)} }
+    @media(max-width:680px){.watch-modal-panel{grid-template-columns:1fr;max-height:90vh}.watch-modal-visual,.watch-modal-visual img{min-height:260px;height:260px}.watch-modal-copy{padding:26px}.watch-modal-copy h2{font-size:2.2rem}.watch-modal-actions .btn{width:100%;justify-content:center}}
+    @media(prefers-reduced-motion:reduce){.watch-modal-visual img,.watch-modal-visual::after{animation:none!important}}
+
+
+
+    /* TITAN ATELIER — White, Gold & Black Signature Theme */
+    :root {
+      --ink: #171612;
+      --ink-soft: #24221d;
+      --panel: #ffffff;
+      --cream: #171612;
+      --muted: #68655d;
+      --gold: #b18a43;
+      --gold-light: #d4b36b;
+      --line: rgba(177,138,67,.28);
+    }
+    body { background:#fbfaf6; color:#171612; }
+    section { background-color:#fbfaf6; color:#171612; }
+    .site-header { background:rgba(251,250,246,.86); backdrop-filter:blur(16px); border-bottom-color:rgba(177,138,67,.16); }
+    .site-header.scrolled { background:rgba(251,250,246,.97); border-color:rgba(177,138,67,.28); }
+    .brand-symbol { color:#a77c31; border-color:#b18a43; }
+    .brand-name, .nav-links a, .menu-toggle { color:#171612; }
+    .brand-name small { color:#a77c31; }
+    .nav-links .nav-cta { color:#171612; border-color:rgba(177,138,67,.55); }
+    .nav-links a:hover { color:#a77c31; }
+    .menu-toggle { border-color:rgba(177,138,67,.45); }
+    .hero { background:#f5f1e8; }
+    .hero::before { background:linear-gradient(90deg,rgba(251,250,246,.97) 0%,rgba(251,250,246,.90) 37%,rgba(251,250,246,.48) 67%,rgba(251,250,246,.10) 100%),linear-gradient(0deg,rgba(251,250,246,.7),transparent 35%); }
+    .hero h1, .hero h1 em { color:#171612; }
+    .hero h1 em { text-shadow:0 1px 0 rgba(255,255,255,.5); }
+    .hero .eyebrow, .eyebrow { color:#8e6b2f; }
+    .hero-copy { color:#514d44; }
+    .hero-note { color:#29261f; }
+    .scroll-cue { color:#5e594f; }
+    .btn { color:#171612; border-color:#b18a43; }
+    .btn:hover, .btn:focus-visible { background:#b18a43; color:#fff; }
+    .btn-solid { background:#171612; color:#fff; border-color:#171612; }
+    .btn-solid:hover, .btn-solid:focus-visible { background:#b18a43; color:#fff; border-color:#b18a43; }
+    .gold, .product-arrow, .signature-mark { color:#a77c31; }
+    .story-copy p, .section-heading p, .product-info p, .craft-item p, .bespoke .section-heading p { color:#68655d; }
+    .story-quote { color:#a77c31; border-top-color:rgba(177,138,67,.35); }
+    .story-quote small, .signature small { color:#777166; }
+    .collections, .contact { background:#f4f0e7; color:#171612; }
+    .collection-feature-note { background:linear-gradient(110deg,rgba(177,138,67,.12),rgba(255,255,255,.72) 70%); border-color:rgba(177,138,67,.35); }
+    .collection-feature-note p, .collection-foot { color:#68655d; }
+    .product-image-wrap { background:#e9e3d7; }
+    .product-number { color:#fff; text-shadow:0 1px 8px rgba(0,0,0,.7); }
+    .product-info h3 { color:#171612; }
+    .watch-motion-label { background:rgba(23,22,18,.82); color:#f2dfb5; border-color:rgba(177,138,67,.75); }
+    .craft-list { color:#171612; }
+    .craft-item { border-color:rgba(177,138,67,.3); }
+    .craft-index { color:#a77c31; }
+    .bespoke { background:#eee6d7; color:#171612; }
+    .bespoke-aside .btn { color:#171612; border-color:#a77c31; }
+    .bespoke-aside .btn:hover { background:#171612; color:#fff; }
+    .contact { border-top:1px solid rgba(177,138,67,.28); }
+    .contact-action { color:#171612; border-color:rgba(177,138,67,.42); }
+    .contact-action:hover { background:rgba(177,138,67,.1); border-color:#a77c31; }
+    .whatsapp-float { color:#fff; }
+    footer { background:#171612; color:#fbfaf6; border-top:2px solid #b18a43; }
+    .footer-links { color:#d0c8b8; }
+    .footer-links a:hover { color:#e0bf78; }
+    .footer-bottom { color:#b6afa1; border-top-color:rgba(212,179,107,.25); }
+    /* Cinematic opening keeps black as a deliberate, high-contrast signature accent. */
+    .watch-intro { background:radial-gradient(ellipse at 50% 44%,#fffdf8 0%,#f3ead8 57%,#e5d3ae 100%); }
+    .intro-grain { opacity:.055; }
+    .intro-light { background:conic-gradient(from 225deg at 50% 48%,transparent 0deg,rgba(177,138,67,.04) 42deg,rgba(212,179,107,.36) 52deg,transparent 66deg,transparent 360deg); }
+    .intro-overline { color:#8d6a2e; }
+    .intro-wordmark { color:#171612; }
+    .intro-wordmark span { color:#a77c31; }
+    .intro-tagline { color:#5c5140; }
+    .intro-enter { color:#8d6a2e; }
+    .intro-progress { background:rgba(177,138,67,.2); }
+    .intro-watch { border-color:#b18a43; background:radial-gradient(circle at 32% 24%,#45413a 0%,#24221d 27%,#080807 70%,#30281a 100%); box-shadow:0 0 0 2px #e4c88c,0 0 0 12px rgba(177,138,67,.12),0 0 70px rgba(177,138,67,.28),inset 0 0 24px #000,inset 0 0 0 2px rgba(255,255,255,.13); }
+    .watch-modal { background:rgba(23,22,18,.72); }
+    .watch-modal-panel { background:linear-gradient(135deg,#fffdf8,#eee6d7 70%); color:#171612; border-color:rgba(177,138,67,.55); box-shadow:0 30px 100px rgba(0,0,0,.28); }
+    .watch-modal-visual { background:#e7dfd0; }
+    .watch-modal-close { background:#171612; color:#fff; border-color:#b18a43; }
+    @media (max-width: 760px) {
+      .nav-links { background:rgba(251,250,246,.98); border:1px solid rgba(177,138,67,.25); }
+      .hero::before { background:linear-gradient(90deg,rgba(251,250,246,.95),rgba(251,250,246,.72)),linear-gradient(0deg,rgba(251,250,246,.7),transparent); }
+    }
+
+
+    /* Premium interaction layer: minimal search, saved selection, and agency corner signature. */
+    .collection-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:28px 0 8px}
+    .search-wrap{display:flex;align-items:center;gap:12px;flex:1;max-width:480px;min-height:52px;padding:0 16px;border:1px solid rgba(177,138,67,.4);background:rgba(255,255,255,.72);color:#8c6b32}
+    .search-wrap>span{font-size:1.5rem;line-height:1}.search-wrap input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#171612;padding:12px 0}.search-wrap input::placeholder{color:#82796b}
+    .cart-trigger{color:#171612;border-color:#b18a43;white-space:nowrap}.cart-count{display:inline-grid;place-items:center;min-width:24px;height:24px;border-radius:50%;background:#171612;color:#f7e7c5;font-size:.72rem;letter-spacing:0}
+    .search-results{font-size:.75rem;color:#756b5c;margin:0 0 18px}.product-card[hidden]{display:none!important}
+    .reviews-section{background:#f0e8d9;color:#171612}.reviews-section .section-heading p:not(.eyebrow){color:#686052}.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.review-card{padding:30px;border:1px solid rgba(177,138,67,.34);background:rgba(255,255,255,.48);min-height:230px;display:flex;flex-direction:column}.review-stars{color:#a77c31;letter-spacing:.18em;margin-bottom:18px}.review-card p{font-family:var(--serif);font-size:1.35rem;line-height:1.42;margin-bottom:25px}.review-card span{margin-top:auto;color:#796b54;font-size:.58rem;letter-spacing:.12em}.review-disclaimer{font-size:.7rem;color:#746a5b;margin:18px 0 0}
+    .maps-link{display:inline-block;margin-top:10px;color:#a77c31;text-decoration:underline;text-underline-offset:4px;font-size:.82rem}
+    .cart-overlay{position:fixed;inset:0;z-index:10010;background:rgba(10,10,8,.56);backdrop-filter:blur(8px);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}.cart-overlay.open{opacity:1;visibility:visible}.cart-panel{position:absolute;right:0;top:0;height:100%;width:min(480px,100%);background:#fbfaf6;color:#171612;padding:clamp(22px,4vw,38px);display:flex;flex-direction:column;transform:translateX(24px);transition:transform .3s cubic-bezier(.2,.8,.2,1);box-shadow:-20px 0 70px rgba(0,0,0,.2)}.cart-overlay.open .cart-panel{transform:translateX(0)}.cart-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-bottom:1px solid rgba(177,138,67,.35);padding-bottom:18px}.cart-heading h2{font-size:clamp(2rem,6vw,2.8rem);margin:12px 0 0}.cart-heading .eyebrow{color:#8e6a30}.cart-close{width:42px;height:42px;border:1px solid #b18a43;border-radius:50%;background:transparent;color:#171612;font-size:1.7rem;cursor:pointer}.cart-intro{color:#756b5c;font-size:.85rem;margin:18px 0}.cart-items{overflow:auto;flex:1}.cart-empty{padding:24px 0;color:#756b5c}.cart-item{display:grid;grid-template-columns:74px 1fr auto;gap:13px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(177,138,67,.2)}.cart-item img{width:74px;height:86px;object-fit:cover;background:#eee6d7}.cart-item h3{font-size:1.08rem;margin:0 0 5px}.cart-item p{font-size:.72rem;color:#756b5c;margin:0}.cart-remove{border:0;background:transparent;color:#8e6a30;text-decoration:underline;cursor:pointer;font-size:.72rem}.cart-footer{padding-top:20px;border-top:1px solid rgba(177,138,67,.35);display:grid;gap:12px}.cart-footer .btn{width:100%;color:#171612}.cart-clear{border:0;background:none;color:#756b5c;text-decoration:underline;cursor:pointer;padding:8px}.agency-corner{position:fixed;left:16px;bottom:16px;z-index:9000;display:flex;align-items:center;gap:9px;padding:10px 13px;background:rgba(23,22,18,.94);border:1px solid rgba(212,179,107,.7);box-shadow:0 8px 30px rgba(0,0,0,.15);color:#fffaf0;backdrop-filter:blur(12px);transition:transform .2s,background .2s}.agency-corner:hover{transform:translateY(-2px);background:#171612}.agency-corner>span:first-child{font-size:.48rem;letter-spacing:.15em;color:#e0bf78}.agency-corner strong{font-size:.65rem;font-weight:600;letter-spacing:.01em}.agency-corner .agency-dot{color:#e0bf78;font-size:.8rem}.watch-modal-actions{flex-wrap:wrap}.watch-modal-actions #addToCart{color:#171612;cursor:pointer}
+    @media(max-width:760px){.collection-tools{align-items:stretch;flex-direction:column}.search-wrap{max-width:none}.cart-trigger{width:100%}.review-grid{grid-template-columns:1fr}.review-card{min-height:unset}.agency-corner{left:10px;bottom:10px;padding:8px 10px;gap:6px}.agency-corner>span:first-child{font-size:.42rem}.agency-corner strong{font-size:.57rem}.whatsapp-float{bottom:66px!important}.cart-panel{padding:22px}.nav-links{max-height:calc(100svh - 74px);overflow:auto}}
+    @media(prefers-reduced-motion:reduce){.cart-panel,.cart-overlay,.agency-corner{transition:none!important}}
+
+
+    /* Saved favourites, browsing history, theme control, and reduced-motion polish. */
+    .theme-toggle{white-space:nowrap;color:#171612;border-color:#b18a43;min-width:112px}
+    .product-image-wrap{position:relative}
+    .wishlist-button{position:absolute;z-index:3;top:12px;right:12px;width:42px;height:42px;border:1px solid rgba(177,138,67,.55);border-radius:50%;background:rgba(251,250,246,.92);color:#171612;font-size:1.35rem;display:grid;place-items:center;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.08);transition:transform .2s,background .2s,color .2s}
+    .wishlist-button:hover{transform:scale(1.07)}.wishlist-button[aria-pressed="true"]{background:#171612;color:#e0bf78}
+    .recently-viewed,.wishlist-shelf{margin-top:58px;padding-top:30px;border-top:1px solid rgba(177,138,67,.3)}
+    .recent-heading h3{margin:8px 0 20px;font-size:clamp(1.8rem,3vw,2.5rem)}.recent-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .recent-card{display:block;text-align:left;border:1px solid rgba(177,138,67,.25);background:rgba(255,255,255,.55);padding:0;color:#171612;cursor:pointer;min-width:0}
+    .recent-card img{height:170px;object-fit:cover}.recent-card strong{display:block;padding:12px 14px;font-family:var(--serif);font-size:1rem;font-weight:400}
+    .recent-card span{display:block;padding:0 14px 14px;color:#8b6b35;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase}
+    body.dark-mode{background:#101010;color:#f6f0e4}body.dark-mode .site-header{background:rgba(17,17,17,.93)!important;border-color:rgba(201,170,114,.25)}body.dark-mode .nav-links{background:#151515;color:#f6f0e4}body.dark-mode .collections,body.dark-mode .craft-section,body.dark-mode .story-section,body.dark-mode .bespoke-section{background:#101010!important;color:#f6f0e4!important}body.dark-mode .section-heading p,body.dark-mode .muted{color:#b9b1a3}body.dark-mode .search-wrap{background:#1c1c1c;color:#e0bf78}body.dark-mode .search-wrap input{color:#f6f0e4}body.dark-mode .cart-trigger,body.dark-mode .theme-toggle{color:#f6f0e4;background:#171717}body.dark-mode .recent-card{background:#1b1b1b;color:#f6f0e4}body.dark-mode .reviews-section{background:#1c1914;color:#f6f0e4}body.dark-mode .reviews-section .section-heading p:not(.eyebrow){color:#c3b9a7}body.dark-mode .review-card{background:#24211c;color:#f6f0e4}body.dark-mode .review-card span{color:#c5b99f}body.dark-mode .site-footer{background:#090909!important}body.dark-mode .product-info{color:#f6f0e4}body.dark-mode .product-info p{color:#c1b9ab}
+    @media(max-width:760px){.recent-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.recent-card img{height:130px}.theme-toggle{width:100%}.wishlist-button{width:38px;height:38px;top:8px;right:8px}}
+    @media(max-width:420px){.recent-grid{grid-template-columns:1fr 1fr}.recent-card img{height:112px}}
+    @media(prefers-reduced-motion:reduce){.watch-intro{animation-duration:.01ms!important;animation-delay:0s!important}.intro-grain,.intro-light,.intro-orbit,.watch-intro-inner,.intro-watch{animation:none!important}}
+
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Titan Timekeepers Atelier","description":"A concept luxury timepiece collection and bespoke enquiry experience.","inLanguage":"en","publisher":{"@type":"Organization","name":"Growthedgemarketing"}}
+  </script>
+</head>
+<body>
+  <div class="watch-intro" aria-hidden="true">
+    <div class="intro-grain"></div><div class="intro-light"></div><div class="intro-orbit"></div>
+    <div class="watch-intro-inner">
+      <div class="intro-overline">A study in time · Since 1987</div>
+      <div class="intro-watch">
+        <span class="intro-crown"></span>
+        <span class="watch-tick" style="transform:rotate(0deg)"></span><span class="watch-tick" style="transform:rotate(30deg)"></span><span class="watch-tick" style="transform:rotate(60deg)"></span><span class="watch-tick" style="transform:rotate(90deg)"></span><span class="watch-tick" style="transform:rotate(120deg)"></span><span class="watch-tick" style="transform:rotate(150deg)"></span><span class="watch-tick" style="transform:rotate(180deg)"></span><span class="watch-tick" style="transform:rotate(210deg)"></span><span class="watch-tick" style="transform:rotate(240deg)"></span><span class="watch-tick" style="transform:rotate(270deg)"></span><span class="watch-tick" style="transform:rotate(300deg)"></span><span class="watch-tick" style="transform:rotate(330deg)"></span>
+        <span class="watch-hand"></span><span class="watch-hand minute"></span><span class="watch-hand second"></span><span class="watch-pin"></span>
+      </div>
+      <div class="intro-wordmark">Titan Timekeepers<span>Atelier · Time, considered</span></div>
+      <p class="intro-tagline">Not merely worn. Remembered.</p>
+      <div class="intro-progress"><span></span></div>
+    </div>
+    <div class="intro-enter">Entering the Atelier</div>
+  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brandmark" href="#home" aria-label="Titan Timekeepers Atelier home">
+        <span class="brand-symbol" aria-hidden="true">T</span>
+        <span class="brand-name">TITAN TIMEKEEPERS<small>Atelier · Est. 1987</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#story">Our Atelier</a>
+        <a href="#collection">The Collection</a>
+        <a href="#craft">Craftsmanship</a>
+        <a href="#bespoke">Bespoke</a>
+        <a href="#client-notes">Client Notes</a>
+        <a class="nav-cta" href="#appointment">Book a Consultation <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img decoding="async" class="hero-image" src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=2200&q=85" alt="Elegant luxury wristwatch photographed in dramatic light" fetchpriority="high">
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Independent watchmaking · Since 1987</p>
+        <h1 id="hero-title" class="reveal delay-1">Time,<br><em>considered.</em></h1>
+        <p class="hero-copy reveal delay-2">A world of considered design, mechanical artistry, and quiet confidence. Discover timepieces made for the moments that become your story.</p>
+        <div class="hero-actions reveal delay-3">
+          <a class="btn btn-solid" href="#collection">Discover the Collection <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="btn" href="#bespoke">Commission a Timepiece</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#story"><span aria-hidden="true"></span> Explore the atelier</a>
+      <div class="hero-note">Made slowly. Worn forever.</div>
+    </section>
+
+    <section class="section" id="story">
+      <div class="container story-grid">
+        <div class="story-image-wrap reveal">
+          <img class="story-image" src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&w=1200&q=85" alt="Close-up of a carefully finished mechanical wristwatch">
+        </div>
+        <div class="story-copy reveal delay-1">
+          <p class="eyebrow">The art of keeping time</p>
+          <h2>Made with patience.<br><span class="gold">Meant to last.</span></h2>
+          <p>At Titan Timekeepers Atelier, we believe a watch should be more than an instrument. It should hold a story, mark a milestone, and become part of the life it accompanies.</p>
+          <p>Our small team of watchmakers brings traditional hand-finishing together with thoughtful contemporary design. Every proportion is considered. Every detail has a purpose. Nothing is hurried.</p>
+          <p>We make fewer pieces so each one can receive the attention it deserves—from the first sketch to the final regulation.</p>
+          <p>Every watch begins with a question: what will this moment mean to the person who wears it? A first achievement. A new chapter. A promise kept. We design for the stories that outlast the hour, using honest materials and details that reward a closer look.</p>
+          <div class="story-quote">“The best timepieces do more than measure a moment. They help you remember it.”<small>The Atelier Journal · Our point of view</small></div>
+          <div class="signature">
+            <span class="signature-mark" aria-hidden="true">T.</span>
+            <div><strong>Time, made personal.</strong><small>The Atelier Philosophy</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section collections" id="collection">
+      <div class="container">
+        <div class="section-heading collection-top reveal">
+          <div>
+            <p class="eyebrow">Selected timepieces</p>
+            <h2>Quietly distinctive.</h2>
+            <p>Explore 15 distinctive concept timepieces, each with its own character, individual motion effect, and a dedicated detail view.</p>
+          </div>
+          <a class="btn" href="#appointment">Enquire About a Piece <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <div class="collection-tools" role="search" aria-label="Search the collection">
+          <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="watchSearch" type="search" placeholder="Search timepieces…" aria-label="Search timepieces" autocomplete="off"></label>
+          <button class="btn theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">◐ Theme</button>
+          <button class="btn cart-trigger" id="openCart" type="button" aria-haspopup="dialog">Selection <span class="cart-count" id="cartCount">0</span> <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="search-results" id="searchResults" aria-live="polite">Showing all 15 concept timepieces.</p>
+        <div class="collection-grid">
+          <article class="product-card reveal watch-01">
+            <a href="#appointment" aria-label="Enquire about the Meridian No. 01">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1000&q=85" alt="Meridian No. 01, a classic dark-dial wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">01 / 15</span><span class="watch-motion-label">Obsidian shimmer</span>
+              </div>
+              <div class="product-info">
+                <div><h3>Meridian No. 01</h3><p>A balanced, understated companion for every hour.</p><span class="product-price">Price on Request</span></div>
+                <span class="product-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+          </article>
+          <article class="product-card reveal delay-1 watch-02">
+            <a href="#appointment" aria-label="Enquire about the Aurelia Moonphase">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=85" alt="Aurelia Moonphase, a refined gold-toned wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">02 / 15</span>
+              </div>
+              <div class="product-info">
+                <div><h3>Aurelia Moonphase</h3><p>A poetic complication inspired by the night sky.</p><span class="product-price">Price on Request</span></div>
+                <span class="product-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+          </article>
+          <article class="product-card reveal delay-2 watch-03">
+            <a href="#appointment" aria-label="Enquire about the Nocturne Reserve">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=1000&q=85" alt="Nocturne Reserve, a contemporary dark wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">03 / 15</span>
+              </div>
+              <div class="product-info">
+                <div><h3>Nocturne Reserve</h3><p>Architectural lines with a quietly confident presence.</p><span class="product-price">Price on Request</span></div>
+                <span class="product-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+          </article>
+          <article class="product-card reveal watch-04">
+            <a href="#appointment" aria-label="Enquire about the Solstice Chronograph">
+              <div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1000&q=85" alt="Solstice Chronograph, a refined steel watch with a detailed dial" loading="lazy" decoding="async"><span class="product-number">04 / 15</span></div>
+              <div class="product-info"><div><span class="product-tag">New arrival</span><h3>Solstice Chronograph</h3><p>Sporting precision, balanced with understated elegance.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal delay-1 watch-05">
+            <a href="#appointment" aria-label="Enquire about the Élan Automatic">
+              <div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1000&q=85&sat=-35" alt="Élan Automatic, a versatile luxury watch with a clean dial" loading="lazy" decoding="async"><span class="product-number">05 / 15</span></div>
+              <div class="product-info"><div><span class="product-tag">Everyday icon</span><h3>Élan Automatic</h3><p>A modern essential with a calm, confident silhouette.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal delay-2 watch-06">
+            <a href="#appointment" aria-label="Enquire about the Obsidian Atelier Edition">
+              <div class="product-image-wrap"><img class="product-image" src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=1000&q=85" alt="Obsidian Atelier Edition, a dramatic dark luxury timepiece" loading="lazy" decoding="async"><span class="product-number">06 / 15</span></div>
+              <div class="product-info"><div><span class="product-tag">Limited edition</span><h3>Obsidian Atelier Edition</h3><p>A dark, sculptural statement crafted for evening hours.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+                  <article class="product-card reveal watch-07">
+            <a href="#appointment" aria-label="Enquire about Celeste Tourbillon">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1000&q=85" alt="Celeste Tourbillon, luxury wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">07 / 15</span><span class="watch-motion-label">Orbiting light</span>
+              </div>
+              <div class="product-info"><div><span class="product-tag">Atelier selection</span><h3>Celeste Tourbillon</h3><p>A celestial-inspired dial with a sense of motion and wonder.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal watch-08">
+            <a href="#appointment" aria-label="Enquire about Riviera Skeleton">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1000&q=85" alt="Riviera Skeleton, luxury wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">08 / 15</span><span class="watch-motion-label">Mechanical soul</span>
+              </div>
+              <div class="product-info"><div><span class="product-tag">Atelier selection</span><h3>Riviera Skeleton</h3><p>An open-worked silhouette for those who admire the mechanics.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal watch-09">
+            <a href="#appointment" aria-label="Enquire about Auric Grand Date">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1000&q=85" alt="Auric Grand Date, luxury wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">09 / 15</span><span class="watch-motion-label">Golden hour</span>
+              </div>
+              <div class="product-info"><div><span class="product-tag">Atelier selection</span><h3>Auric Grand Date</h3><p>Warm gold tones and a confident, legible statement.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal watch-10">
+            <a href="#appointment" aria-label="Enquire about Abyss Diver">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1000&q=85" alt="Abyss Diver, luxury wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">10 / 15</span><span class="watch-motion-label">Dive into depth</span>
+              </div>
+              <div class="product-info"><div><span class="product-tag">Atelier selection</span><h3>Abyss Diver</h3><p>A deep-sea spirit with bold markers and rugged poise.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal watch-11">
+            <a href="#appointment" aria-label="Enquire about Pearl Meridian">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=85" alt="Pearl Meridian, luxury wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">11 / 15</span><span class="watch-motion-label">Pearl shimmer</span>
+              </div>
+              <div class="product-info"><div><span class="product-tag">Atelier selection</span><h3>Pearl Meridian</h3><p>A luminous, refined face with a softer, timeless presence.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal watch-12">
+            <a href="#appointment" aria-label="Enquire about Carbon Vector">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=1000&q=85" alt="Carbon Vector, luxury wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">12 / 15</span><span class="watch-motion-label">Precision in motion</span>
+              </div>
+              <div class="product-info"><div><span class="product-tag">Atelier selection</span><h3>Carbon Vector</h3><p>A modern, performance-led design with dark technical character.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal watch-13">
+            <a href="#appointment" aria-label="Enquire about Heritage 1968">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=85" alt="Heritage 1968, luxury wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">13 / 15</span><span class="watch-motion-label">Legacy in motion</span>
+              </div>
+              <div class="product-info"><div><span class="product-tag">Atelier selection</span><h3>Heritage 1968</h3><p>A vintage-inspired profile, shaped by enduring design codes.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal watch-14">
+            <a href="#appointment" aria-label="Enquire about Crimson Nocturne">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&w=1000&q=85" alt="Crimson Nocturne, luxury wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">14 / 15</span><span class="watch-motion-label">Nightfall glow</span>
+              </div>
+              <div class="product-info"><div><span class="product-tag">Atelier selection</span><h3>Crimson Nocturne</h3><p>A bold evening piece with a striking, dramatic personality.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+          <article class="product-card reveal watch-15">
+            <a href="#appointment" aria-label="Enquire about The Atelier One">
+              <div class="product-image-wrap">
+                <img class="product-image" src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1000&q=85" alt="The Atelier One, luxury wristwatch" loading="lazy" decoding="async">
+                <span class="product-number">15 / 15</span><span class="watch-motion-label">Signature sweep</span>
+              </div>
+              <div class="product-info"><div><span class="product-tag">Atelier selection</span><h3>The Atelier One</h3><p>A signature piece that brings the collection into focus.</p><span class="product-price">Price on Request</span></div><span class="product-arrow" aria-hidden="true">↗</span></div>
+            </a>
+          </article>
+</div>
+        <section class="recently-viewed" id="recentlyViewed" aria-label="Recently viewed timepieces" hidden>
+          <div class="recent-heading"><p class="eyebrow">Your browsing trail</p><h3>Recently viewed</h3></div>
+          <div class="recent-grid" id="recentGrid"></div>
+        </section>
+        <section class="wishlist-shelf" id="wishlistShelf" aria-label="Your wishlist" hidden>
+          <div class="recent-heading"><p class="eyebrow">Kept close</p><h3>Your wishlist</h3></div>
+          <div class="recent-grid" id="wishlistGrid"></div>
+        </section>
+        <div class="collection-feature-note reveal"><div><h3>Find the piece that feels like you.</h3><p>Tell us what you value in a timepiece—its movement, materials, character, or the story behind it—and we’ll help you explore the collection.</p></div><a class="btn" href="#appointment">Speak with the Atelier <span class="arrow" aria-hidden="true">↗</span></a></div>
+        <div class="collection-foot"><span>15 concept timepieces · Individual animations</span><span>Availability by enquiry</span></div>
+      </div>
+    </section>
+
+
+    <div class="watch-modal" id="watchModal" role="dialog" aria-modal="true" aria-labelledby="watchModalTitle" aria-hidden="true">
+      <div class="watch-modal-panel">
+        <button class="watch-modal-close" id="watchModalClose" type="button" aria-label="Close watch details">×</button>
+        <div class="watch-modal-visual"><img id="watchModalImage" src="" alt="Selected timepiece"></div>
+        <div class="watch-modal-copy">
+          <p class="eyebrow">The Atelier Collection</p>
+          <h2 id="watchModalTitle">A timepiece of distinction</h2>
+          <p id="watchModalDescription">A considered expression of design, detail, and personal character.</p>
+          <span class="watch-modal-price">Price on Request · Availability by enquiry</span>
+          <p>Every detail deserves a closer look. Contact the Atelier for current availability, materials, and personalised guidance.</p>
+          <div class="watch-modal-actions"><button class="btn btn-solid" id="addToCart" type="button">＋ Add to Selection</button><a class="btn" id="watchModalWhatsApp" href="https://wa.me/918657678522" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp ↗</a><a class="btn btn-outline" href="mailto:Vinayakjogdand45@gmail.com?subject=Titan%20Timekeepers%20Atelier%20Enquiry">Email the Atelier ↗</a></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="craft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The details matter</p>
+          <h2>Precision is a practice.</h2>
+          <p>Our craft lives in the things you notice—and in the details you may never see. Each element is chosen for its integrity, then finished with care.</p>
+        </div>
+        <div class="craft-grid">
+          <div class="craft-feature reveal">
+            <img src="https://images.unsplash.com/photo-1619134778706-7015533a6150?auto=format&fit=crop&w=1400&q=85" alt="Fine mechanical watch detailing and polished casework" loading="lazy" decoding="async">
+            <div class="craft-feature-content">
+              <p class="eyebrow">Inside the atelier</p>
+              <h3>Every second, earned.</h3>
+              <p>Assembly, adjustment, and finishing are approached as connected disciplines—not steps to rush through.</p>
+            </div>
+          </div>
+          <div class="craft-list">
+            <article class="craft-item reveal">
+              <span class="craft-index">01</span>
+              <div><h3>The movement</h3><p>Carefully selected mechanical calibres, adjusted and tested for reliable performance and a considered feel on the wrist.</p></div>
+            </article>
+            <article class="craft-item reveal delay-1">
+              <span class="craft-index">02</span>
+              <div><h3>The materials</h3><p>Refined steel, warm precious-metal tones, tactile straps, and sapphire crystal chosen for beauty that matures gracefully.</p></div>
+            </article>
+            <article class="craft-item reveal delay-2">
+              <span class="craft-index">03</span>
+              <div><h3>The finishing</h3><p>Edges, surfaces, and transitions are reviewed under magnification. The final result should feel as considered as it looks.</p></div>
+            </article>
+            <article class="craft-item reveal delay-3">
+              <span class="craft-index">04</span>
+              <div><h3>The final regulation</h3><p>Before leaving the atelier, each piece is checked, documented, and prepared for the person who will wear it.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bespoke" id="bespoke">
+      <div class="container bespoke-layout">
+        <div class="bespoke-aside reveal">
+          <p class="eyebrow">Your story, in time</p>
+          <h2>A piece of<br>your own.</h2>
+          <p class="muted">A bespoke commission begins with a conversation. Together, we shape a timepiece around your taste, your story, and the details that matter to you.</p>
+          <a class="btn" href="#appointment">Begin a Conversation <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <div class="steps">
+          <article class="step reveal"><span class="step-no">01</span><div><h3>Discover</h3><p>We begin with a private consultation to understand your preferences, inspiration, and how you want the watch to live with you.</p></div></article>
+          <article class="step reveal delay-1"><span class="step-no">02</span><div><h3>Design</h3><p>Explore dial tones, case finishes, strap options, and personal details with guidance from our atelier team.</p></div></article>
+          <article class="step reveal delay-2"><span class="step-no">03</span><div><h3>Craft</h3><p>Once the design is approved, your commission enters production. We share thoughtful updates as your piece takes shape.</p></div></article>
+          <article class="step reveal delay-3"><span class="step-no">04</span><div><h3>Present</h3><p>Your completed timepiece is inspected, documented, and presented with care—ready to begin its next chapter with you.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="client-notes">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">The experience</p><h2>Details make<br><span class="gold">the difference.</span></h2><p>Thoughtful service should feel as considered as the timepiece itself.</p></div>
+        <div class="review-grid">
+          <article class="review-card reveal"><div class="review-stars" aria-label="Five out of five decorative stars">★★★★★</div><p>“A calm, personal way to explore the details and find a design that feels right.”</p><span>COLLECTOR EXPERIENCE · SAMPLE COPY</span></article>
+          <article class="review-card reveal delay-1"><div class="review-stars" aria-label="Five out of five decorative stars">★★★★★</div><p>“The focus on materials, proportion, and the story behind a watch makes the process special.”</p><span>ATELIER CONSULTATION · SAMPLE COPY</span></article>
+          <article class="review-card reveal delay-2"><div class="review-stars" aria-label="Five out of five decorative stars">★★★★★</div><p>“A considered experience from the first question to exploring the final details.”</p><span>BESPOKE ENQUIRY · SAMPLE COPY</span></article>
+        </div>
+        <p class="review-disclaimer">These are illustrative placeholder testimonials, not verified customer reviews. Replace them with genuine, permission-approved feedback before publishing.</p>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="container reveal">
+        <div class="quote-mark" aria-hidden="true">“</div>
+        <blockquote>“The most meaningful luxury is the feeling that something was made with you in mind.”</blockquote>
+        <div class="quote-credit">The Atelier Journal · Our point of view</div>
+        <p class="quote-disclaimer">A statement of brand philosophy, not a customer testimonial or third-party press endorsement.</p>
+      </div>
+    </section>
+
+    <section class="section contact" id="appointment">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Private appointments</p>
+          <h2>Let’s make<br><span class="gold">time for you.</span></h2>
+          <p>Whether you have a clear vision or are just beginning to explore, we would be delighted to hear from you. Request an appointment with our atelier team.</p>
+          <div class="contact-detail">
+            <span>Visit the atelier</span>
+            <p>By appointment · Location shared on confirmation</p>
+            <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Geneva%2C%20Switzerland" target="_blank" rel="noopener noreferrer">Open Google Maps search ↗</a>
+          </div>
+          <div class="contact-detail">
+            <span>Write to us</span>
+            <a href="mailto:Vinayakjogdand45@gmail.com">Vinayakjogdand45@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <span>Call or message</span>
+            <a href="tel:+918657678522">+91 86576 78522</a>
+          </div>
+          <div class="contact-actions" aria-label="Contact options">
+            <a class="contact-action" href="tel:+918657678522">Call Us ↗</a>
+            <a class="contact-action" href="https://wa.me/918657678522?text=Hello%20Titan%20Timekeepers%20Atelier%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+            <a class="contact-action" href="mailto:Vinayakjogdand45@gmail.com?subject=Titan%20Timekeepers%20Atelier%20Enquiry">Gmail ↗</a>
+          </div>
+          <div class="contact-detail">
+            <span>By appointment</span>
+            <p>Tuesday – Saturday · 10:00–18:00 CET</p>
+          </div>
+        </div>
+        <form class="contact-form reveal delay-1" id="appointmentForm">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Full name" required></div>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+          <div class="field"><label for="interest">I’m interested in</label><select id="interest" name="interest" required><option value="" disabled selected>Select an option</option><option>Exploring the collection</option><option>A bespoke commission</option><option>A service or restoration</option><option>Press and partnerships</option></select></div>
+          <div class="field"><label for="timing">Preferred timing</label><select id="timing" name="timing"><option>Flexible</option><option>Within the next month</option><option>Within three months</option><option>Just exploring</option></select></div>
+          <div class="field full"><label for="message">Tell us a little more</label><textarea id="message" name="message" placeholder="Share any details, ideas, or questions…"></textarea></div>
+          <p class="form-note">Submitting opens WhatsApp with your appointment request pre-filled. Please review and send the message to confirm your enquiry.</p>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          <button class="btn btn-solid" type="submit">Request an Appointment <span class="arrow" aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-heading"><div><p class="eyebrow">Your selection</p><h2 id="cartTitle">Saved timepieces</h2></div><button type="button" class="cart-close" id="closeCart" aria-label="Close selection">×</button></div>
+      <p class="cart-intro">Save pieces you would like to discuss. Pricing and availability are confirmed by enquiry.</p>
+      <div id="cartItems" class="cart-items"><p class="cart-empty">Your selection is empty. Open a timepiece to add it here.</p></div>
+      <div class="cart-footer"><button class="btn btn-solid" id="cartEnquire" type="button">Enquire on WhatsApp ↗</button><button class="cart-clear" id="clearCart" type="button">Clear selection</button></div>
+    </aside>
+  </div>
+
+  <a class="agency-corner" href="https://www.instagram.com/growthedgemarketing/" target="_blank" rel="noopener noreferrer" aria-label="Website by Growthedgemarketing"><span>CRAFTED BY</span><strong>Growthedgemarketing</strong><span class="agency-dot">↗</span></a>
+
+  <a class="whatsapp-float" href="https://wa.me/918657678522?text=Hello%20Titan%20Timekeepers%20Atelier%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer" aria-label="Chat with Titan Timekeepers Atelier on WhatsApp">WhatsApp <span aria-hidden="true">↗</span></a>
+
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <a class="brandmark" href="#home" aria-label="Titan Timekeepers Atelier home">
+          <span class="brand-symbol" aria-hidden="true">T</span>
+          <span class="brand-name">TITAN TIMEKEEPERS<small>Atelier · Est. 1987</small></span>
+        </a>
+        <div class="footer-links">
+          <a href="#story">Our Atelier</a><a href="#collection">Collection</a><a href="#bespoke">Bespoke</a><a href="#appointment">Contact</a><a href="#privacy" id="privacyLink">Privacy</a><a href="#terms" id="termsLink">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Titan Timekeepers Atelier. All rights reserved.</span>
+        <div class="socials"><a href="https://www.instagram.com/growthedgemarketing/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest ↗</a></div>
+        <span>Made with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    function updateHeader() {
+      header.classList.toggle('scrolled', window.scrollY > 24);
+    }
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+      document.body.classList.toggle('menu-open', open);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation menu');
+        document.body.classList.remove('menu-open');
+      });
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+
+    // Product details: open an individual view for every timepiece.
+    const watchModal = document.getElementById('watchModal');
+    const watchModalImage = document.getElementById('watchModalImage');
+    const watchModalTitle = document.getElementById('watchModalTitle');
+    const watchModalDescription = document.getElementById('watchModalDescription');
+    const watchModalWhatsApp = document.getElementById('watchModalWhatsApp');
+    const closeWatchModal = () => {
+      watchModal.classList.remove('open');
+      watchModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+    document.querySelectorAll('.product-card').forEach(card => {
+      const link = card.querySelector('a');
+      if (!link) return;
+      link.setAttribute('href', '#watch-details');
+      link.setAttribute('aria-haspopup', 'dialog');
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        const title = card.querySelector('h3')?.textContent.trim() || 'Atelier Timepiece';
+        const description = card.querySelector('.product-info p')?.textContent.trim() || 'A distinctive expression from the Atelier collection.';
+        const image = card.querySelector('.product-image');
+        watchModalTitle.textContent = title;
+        watchModalDescription.textContent = description;
+        watchModalImage.src = image ? image.src : '';
+        watchModalImage.alt = image ? image.alt : title;
+        const message = `Hello Titan Timekeepers Atelier, I would like to enquire about ${title}. Please share availability and details.`;
+        watchModalWhatsApp.href = `https://wa.me/918657678522?text=${encodeURIComponent(message)}`;
+        watchModal.classList.add('open');
+        watchModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        document.getElementById('watchModalClose').focus();
+      });
+    });
+    document.getElementById('watchModalClose').addEventListener('click', closeWatchModal);
+    watchModal.addEventListener('click', event => { if (event.target === watchModal) closeWatchModal(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape' && watchModal.classList.contains('open')) closeWatchModal(); });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Appointment requests are handed to WhatsApp; the visitor reviews and sends the message.
+    document.getElementById('appointmentForm').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      if (!form.reportValidity()) return;
+      const data = new FormData(form);
+      const message = [
+        'Hello Titan Timekeepers Atelier, I would like to request an appointment.',
+        `Name: ${data.get('name')}`,
+        `Email: ${data.get('email')}`,
+        `Interest: ${data.get('interest')}`,
+        `Preferred timing: ${data.get('timing') || 'Flexible'}`,
+        `Message: ${data.get('message') || 'No additional details provided.'}`
+      ].join('\n');
+      document.getElementById('formStatus').textContent = 'Opening WhatsApp with your request. Review the details and press Send in WhatsApp.';
+      window.open(`https://wa.me/918657678522?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    });
+
+    // Live search across all concept timepieces.
+    const watchSearch = document.getElementById('watchSearch');
+    const productCards = [...document.querySelectorAll('.product-card')];
+    const searchResults = document.getElementById('searchResults');
+    watchSearch.addEventListener('input', () => {
+      const query = watchSearch.value.trim().toLowerCase();
+      let count = 0;
+      productCards.forEach(card => {
+        const match = card.textContent.toLowerCase().includes(query);
+        card.hidden = !match;
+        if (match) count++;
+      });
+      searchResults.textContent = query ? `${count} timepiece${count === 1 ? '' : 's'} found for “${watchSearch.value.trim()}”.` : `Showing all ${productCards.length} concept timepieces.`;
+    });
+
+    // Local selection cart. No checkout or payment is implied; enquiries are sent through WhatsApp.
+    const cartOverlay = document.getElementById('cartOverlay');
+    const cartItemsEl = document.getElementById('cartItems');
+    const cartCount = document.getElementById('cartCount');
+    const selection = readStored('titan-selection');
+    let activeWatch = null;
+    const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+    function renderSelection() {
+      cartCount.textContent = selection.length;
+      localStorage.setItem('titan-selection', JSON.stringify(selection));
+      if (!selection.length) {
+        cartItemsEl.innerHTML = '<p class="cart-empty">Your selection is empty. Open a timepiece to add it here.</p>';
+        return;
+      }
+      cartItemsEl.innerHTML = selection.map((item,index) => `<article class="cart-item"><img src="${escapeHTML(item.image)}" alt=""><div><h3>${escapeHTML(item.title)}</h3><p>Price on request</p></div><button class="cart-remove" type="button" data-remove="${index}" aria-label="Remove ${escapeHTML(item.title)}">Remove</button></article>`).join('');
+    }
+    function openCart() { cartOverlay.classList.add('open'); cartOverlay.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; document.getElementById('closeCart').focus(); }
+    function closeCart() { cartOverlay.classList.remove('open'); cartOverlay.setAttribute('aria-hidden','true'); document.body.style.overflow=''; document.getElementById('openCart').focus(); }
+    document.getElementById('openCart').addEventListener('click',openCart);
+    document.getElementById('closeCart').addEventListener('click',closeCart);
+    cartOverlay.addEventListener('click',event=>{if(event.target===cartOverlay)closeCart();});
+    cartItemsEl.addEventListener('click',event=>{const button=event.target.closest('[data-remove]');if(button){selection.splice(Number(button.dataset.remove),1);renderSelection();}});
+    document.getElementById('clearCart').addEventListener('click',()=>{selection.length=0;renderSelection();});
+    document.getElementById('cartEnquire').addEventListener('click',()=>{
+      if(!selection.length){openCart();return;}
+      const message='Hello Titan Timekeepers Atelier, I would like to enquire about these selected timepieces:\n'+selection.map(item=>'• '+item.title).join('\n')+'\nPlease share availability and details.';
+      window.open('https://wa.me/918657678522?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
+    });
+    document.getElementById('addToCart').addEventListener('click',()=>{
+      if(!activeWatch)return;
+      if(!selection.some(item=>item.title===activeWatch.title))selection.push(activeWatch);
+      renderSelection();
+      const button=document.getElementById('addToCart');button.textContent='✓ Added to Selection';
+      setTimeout(()=>{if(button.isConnected)button.textContent='＋ Add to Selection';},1600);
+    });
+    const originalProductClick = productCards;
+    // Product modal interaction also updates the active item for the selection cart.
+    originalProductClick.forEach(card=>{
+      const link=card.querySelector('a');
+      if(!link)return;
+      link.addEventListener('click',()=>{
+        const image=card.querySelector('.product-image');
+        activeWatch={title:card.querySelector('h3')?.textContent.trim()||'Atelier Timepiece',image:image?.currentSrc||image?.src||'',description:card.querySelector('.product-info p')?.textContent.trim()||''};
+        document.getElementById('addToCart').textContent=selection.some(item=>item.title===activeWatch.title)?'✓ Already in Selection':'＋ Add to Selection';
+      });
+    });
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&cartOverlay.classList.contains('open'))closeCart();});
+    renderSelection();
+
+    // Optional dark theme; choice is remembered on this device.
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('titan-theme');
+    if (savedTheme === 'dark') { document.body.classList.add('dark-mode'); themeToggle.setAttribute('aria-pressed','true'); themeToggle.textContent='☼ Light mode'; themeToggle.setAttribute('aria-label','Switch to light theme'); }
+    themeToggle.addEventListener('click', () => {
+      const dark = document.body.classList.toggle('dark-mode');
+      localStorage.setItem('titan-theme', dark ? 'dark' : 'light');
+      themeToggle.setAttribute('aria-pressed', String(dark));
+      themeToggle.textContent = dark ? '☼ Light mode' : '◐ Theme';
+      themeToggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    });
+
+    // Wishlist and recently viewed are stored locally; no account or server is required.
+    const readStored = (key) => { try { const v = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; } };
+    let wishlist = readStored('titan-wishlist');
+    let recentlyViewed = readStored('titan-recent');
+    const productData = card => {
+      const img = card.querySelector('.product-image');
+      return { title: card.querySelector('h3')?.textContent.trim() || 'Atelier Timepiece', image: img?.currentSrc || img?.src || '', description: card.querySelector('.product-info p')?.textContent.trim() || '' };
+    };
+    const cardMarkup = item => `<button class="recent-card" type="button" data-open-watch="${escapeHTML(item.title)}"><img src="${escapeHTML(item.image)}" alt="" loading="lazy"><strong>${escapeHTML(item.title)}</strong><span>View timepiece ↗</span></button>`;
+    function renderSavedShelves() {
+      const recentSection = document.getElementById('recentlyViewed');
+      const wishlistSection = document.getElementById('wishlistShelf');
+      document.getElementById('recentGrid').innerHTML = recentlyViewed.map(cardMarkup).join('');
+      document.getElementById('wishlistGrid').innerHTML = wishlist.map(cardMarkup).join('');
+      recentSection.hidden = !recentlyViewed.length; wishlistSection.hidden = !wishlist.length;
+      productCards.forEach(card => {
+        const data = productData(card); let btn = card.querySelector('.wishlist-button');
+        if (!btn) { btn = document.createElement('button'); btn.type='button'; btn.className='wishlist-button'; btn.setAttribute('aria-label',`Add ${data.title} to wishlist`); btn.innerHTML='♡'; card.querySelector('.product-image-wrap')?.appendChild(btn); }
+        const saved = wishlist.some(item => item.title === data.title); btn.setAttribute('aria-pressed',String(saved)); btn.innerHTML=saved?'♥':'♡'; btn.setAttribute('aria-label',`${saved?'Remove':'Add'} ${data.title} ${saved?'from':'to'} wishlist`);
+      });
+    }
+    productCards.forEach(card => {
+      const link = card.querySelector('a'); if (!link) return;
+      link.addEventListener('click', () => {
+        const data = productData(card);
+        recentlyViewed = [data, ...recentlyViewed.filter(item => item.title !== data.title)].slice(0,4);
+        localStorage.setItem('titan-recent', JSON.stringify(recentlyViewed)); renderSavedShelves();
+      });
+    });
+    document.querySelector('.collection-grid').addEventListener('click', event => {
+      const btn = event.target.closest('.wishlist-button'); if (!btn) return; event.preventDefault(); event.stopPropagation();
+      const card = btn.closest('.product-card'); const data = productData(card);
+      wishlist = wishlist.some(item => item.title === data.title) ? wishlist.filter(item => item.title !== data.title) : [data, ...wishlist].slice(0,30);
+      localStorage.setItem('titan-wishlist', JSON.stringify(wishlist)); renderSavedShelves();
+    });
+    function openSavedWatch(title) {
+      const card = productCards.find(item => item.querySelector('h3')?.textContent.trim() === title);
+      if (card) { card.querySelector('a')?.click(); document.getElementById('collection').scrollIntoView({behavior:'smooth',block:'start'}); }
+    }
+    document.getElementById('recentGrid').addEventListener('click',event=>{const item=event.target.closest('[data-open-watch]');if(item)openSavedWatch(item.dataset.openWatch);});
+    document.getElementById('wishlistGrid').addEventListener('click',event=>{const item=event.target.closest('[data-open-watch]');if(item)openSavedWatch(item.dataset.openWatch);});
+    renderSavedShelves();
+
+    document.getElementById('privacyLink').addEventListener('click', (event) => {
+      event.preventDefault();
+      alert('Add your actual privacy policy before publishing this website.');
+    });
+    document.getElementById('termsLink').addEventListener('click', (event) => {
+      event.preventDefault();
+      alert('Add your actual terms and conditions before publishing this website.');
+    });
+  </script>
+</body>
+</html>
